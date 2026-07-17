@@ -1,0 +1,30 @@
+'use client';
+
+import { Course, CourseStatus } from '../../lib/types';
+import { CourseChip } from './CourseChip';
+
+interface SemesterColumnProps {
+  semester: number;
+  courses: Course[];
+  statusMap: Record<string, CourseStatus>;
+  onCourseClick: (courseCode: string) => void;
+}
+
+export function SemesterColumn({ semester, courses, statusMap, onCourseClick }: SemesterColumnProps) {
+  return (
+    <div className="semester-col">
+      <div className="semester-label">ภาคเรียนที่ {semester}</div>
+      <div className="semester-courses">
+        {courses.map((course) => (
+          <CourseChip
+            key={course.courseCode}
+            course={course}
+            status={statusMap[course.courseCode]}
+            onClick={() => onCourseClick(course.courseCode)}
+          />
+        ))}
+        {courses.length === 0 && <div className="empty-text">ไม่มีรายวิชา</div>}
+      </div>
+    </div>
+  );
+}

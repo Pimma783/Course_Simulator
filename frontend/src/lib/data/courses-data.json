@@ -1,0 +1,701 @@
+[
+  {
+    "courseCode": "ศท141-1",
+    "courseName": "ภาษาอังกฤษพื้นฐาน 1",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-2-5",
+    "semester": 1,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท021-1",
+    "courseName": "สังคมศาสตร์ในชีวิตประจำวัน",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-6",
+    "semester": 1,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "กช321-1",
+    "courseName": "เศรษฐกิจพอเพียงและการพัฒนาที่ยั่งยืน",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-2-5",
+    "semester": 1,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศศ101-1",
+    "courseName": "เศรษฐศาสตร์เพื่อชีวิตประจำวันและการประกอบการ",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-6",
+    "semester": 1,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท302-2",
+    "courseName": "สังคมและวัฒนธรรมไทย",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-6",
+    "semester": 1,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท031-2",
+    "courseName": "การใช้ภาษาไทย",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-2-5",
+    "semester": 1,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท022-2",
+    "courseName": "อารยธรรมโลก",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-6",
+    "semester": 1,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท104-2",
+    "courseName": "มนุษย์และสิ่งแวดล้อม",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-6",
+    "semester": 1,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ผษ101-2",
+    "courseName": "เกษตรเพื่อชีวิต",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-6",
+    "semester": 1,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "คพ111-1",
+    "courseName": "วิทยาการคอมพิวเตอร์ 1",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 1,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "คพ117-1",
+    "courseName": "หลักการเขียนโปรแกรมเชิงวัตถุ",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 1,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท142-1",
+    "courseName": "ภาษาอังกฤษพื้นฐาน 2",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-2-5",
+    "semester": 2,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "ศท141-1"
+    ]
+  },
+  {
+    "courseCode": "คม100-1",
+    "courseName": "เคมีทั่วไป",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 2,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ฟส105-1",
+    "courseName": "ฟิสิกส์ทั่วไป 1",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 2,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ชว100-2",
+    "courseName": "ชีววิทยาทั่วไป",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 2,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "คพ112-1",
+    "courseName": "วิทยาการคอมพิวเตอร์ 2",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 2,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ111-1"
+    ]
+  },
+  {
+    "courseCode": "คพ121-1",
+    "courseName": "ตรรกศาสตร์เชิงดิจิทัลและอุปกรณ์อัจฉริยะ",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 2,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "คพ151-1",
+    "courseName": "คณิตศาสตร์ดิสครีต",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-6",
+    "semester": 2,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "วท101-1",
+    "courseName": "วิทยาศาสตร์เพื่อชีวิต 3 (2-2-5) วิชาเอกบังคับ",
+    "totalCredits": null,
+    "creditsBreakdown": "3",
+    "semester": 3,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "วท102-1",
+    "courseName": "การพัฒนาวิทยาศาสตร์และเทคโนโลยี 3 (2-2-5) วิชาเอกบังคับ",
+    "totalCredits": null,
+    "creditsBreakdown": "3",
+    "semester": 3,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "พง100-1",
+    "courseName": "พลังงานสำหรับชีวิตประจำวัน 3 (3-0-6) วิชาเอกบังคับ",
+    "totalCredits": null,
+    "creditsBreakdown": "3",
+    "semester": 3,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "วอ101-1",
+    "courseName": "วิศวกรรมเบื้องต้นในชีวิตประจำวัน 3 (3-0-6) วิชาเอกบังคับ",
+    "totalCredits": null,
+    "creditsBreakdown": "3",
+    "semester": 3,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "วอ102-1",
+    "courseName": "นานาสาระเกี่ยวกับอาหารและยา 3 (3-0-6) วิชาเอกบังคับ",
+    "totalCredits": null,
+    "creditsBreakdown": "3",
+    "semester": 3,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท014-2",
+    "courseName": "การสืบค้นสารนิเทศเพื่อการศึกษา 3 (2-2-5) หมวดศึกษาทั่วไป (GE)",
+    "totalCredits": null,
+    "creditsBreakdown": "3",
+    "semester": 3,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท241-4",
+    "courseName": "ภาษาอังกฤษเชิงวิทยาศาสตร์และเทคโนโลยี 1 3 (2-2-5) หมวดศึกษาทั่วไป (GE)",
+    "totalCredits": null,
+    "creditsBreakdown": "3",
+    "semester": 3,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "ศท142-1"
+    ]
+  },
+  {
+    "courseCode": "คพ213-2",
+    "courseName": "การวิเคราะห์และออกแบบอัลกอริทึม 3 (2-3-5) วิชาเอกบังคับ",
+    "totalCredits": null,
+    "creditsBreakdown": "3",
+    "semester": 3,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ112-1",
+      "คพ151-1"
+    ]
+  },
+  {
+    "courseCode": "คศ101-3",
+    "courseName": "แคลคูลัส 1 3 (3-0-6) วิชาเอกบังคับ",
+    "totalCredits": null,
+    "creditsBreakdown": "3",
+    "semester": 3,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "คพ221-2",
+    "courseName": "โครงสร้างข้อมูล 3 (2-3-5) วิชาเอกบังคับ",
+    "totalCredits": null,
+    "creditsBreakdown": "3",
+    "semester": 3,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ112-1"
+    ]
+  },
+  {
+    "courseCode": "คพ231-1",
+    "courseName": "ระบบคอมพิวเตอร์และภาษาแอสเซมบลี",
+    "totalCredits": 1,
+    "creditsBreakdown": "0-3-1",
+    "semester": 3,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "คพ241-1",
+    "courseName": "ระบบฐานข้อมูล 3 (2-3-5) วิชาเอกบังคับ",
+    "totalCredits": null,
+    "creditsBreakdown": "3",
+    "semester": 3,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ112-1"
+    ]
+  },
+  {
+    "courseCode": "ศท180-1",
+    "courseName": "ศิลปะกับความคิดสร้างสรรค์",
+    "totalCredits": 3,
+    "creditsBreakdown": "1-4-4",
+    "semester": 4,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "สถ301-1",
+    "courseName": "หลักสถิติ",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-6",
+    "semester": 4,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท011-1",
+    "courseName": "มนุษย์กับความงามทางศิลปะ",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-6",
+    "semester": 4,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท012-2",
+    "courseName": "จิตวิทยากับพฤติกรรมมนุษย์",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-6",
+    "semester": 4,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท013-2",
+    "courseName": "สุขภาพเพื่อการดำรงชีวิต",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-2-5",
+    "semester": 4,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท304-3",
+    "courseName": "ศาสตร์และศิลป์แห่งปัญญาชน",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-2-5",
+    "semester": 4,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ศท305-2",
+    "courseName": "ประวัติศาสตร์และพัฒนาการของล้านนา",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-6",
+    "semester": 4,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "คพ252-1",
+    "courseName": "คณิตศาสตร์สำหรับวิทยาการคอมพิวเตอร์",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-6",
+    "semester": 4,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คศ101-3"
+    ]
+  },
+  {
+    "courseCode": "ศท242-4",
+    "courseName": "ภาษาอังกฤษเชิงวิทยาศาสตร์และเทคโนโลยี 2",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-2-5",
+    "semester": 4,
+    "category": "general_education",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "ศท241-4"
+    ]
+  },
+  {
+    "courseCode": "คพ222-2",
+    "courseName": "การเขียนโปรแกรมมัลติมีเดีย",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 4,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ117-1"
+    ]
+  },
+  {
+    "courseCode": "คพ232-1",
+    "courseName": "สถาปัตยกรรมคอมพิวเตอร์",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 4,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ121-1"
+    ]
+  },
+  {
+    "courseCode": "อล001-1",
+    "courseName": "วิชาเอกเลือก",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-0",
+    "semester": 5,
+    "category": "major_elective",
+    "isPlaceholderSlot": true,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "คพ313-3",
+    "courseName": "การพัฒนาโปรแกรมประยุกต์บนเว็บ",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 5,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ241-1"
+    ]
+  },
+  {
+    "courseCode": "คพ341-2",
+    "courseName": "วิทยาการข้อมูล",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 5,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ241-1"
+    ]
+  },
+  {
+    "courseCode": "คพ343-3",
+    "courseName": "การวิเคราะห์และออกแบบเชิงวัตถุ",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 5,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ221-2"
+    ]
+  },
+  {
+    "courseCode": "คพ320-1",
+    "courseName": "ระบบปฏิบัติการ",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 5,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ232-1"
+    ]
+  },
+  {
+    "courseCode": "อล002-2",
+    "courseName": "วิชาเอกเลือก",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-0",
+    "semester": 6,
+    "category": "major_elective",
+    "isPlaceholderSlot": true,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "อล003-3",
+    "courseName": "วิชาเอกเลือก",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-0",
+    "semester": 6,
+    "category": "major_elective",
+    "isPlaceholderSlot": true,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "คพ392-1",
+    "courseName": "การเป็นผู้ประกอบการทางด้านคอมพิวเตอร์และนวัตกรรม",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 6,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "คพ344-2",
+    "courseName": "การพัฒนาระบบซอฟต์แวร์เชิงวัตถุ",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 6,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ343-3"
+    ]
+  },
+  {
+    "courseCode": "คพ330-1",
+    "courseName": "การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 6,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ232-1"
+    ]
+  },
+  {
+    "courseCode": "คพ347-1",
+    "courseName": "วิศวกรรมซอฟต์แวร์",
+    "totalCredits": 3,
+    "creditsBreakdown": "2-3-5",
+    "semester": 6,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ343-3"
+    ]
+  },
+  {
+    "courseCode": "คพ391-2",
+    "courseName": "การบริหารโครงการคอมพิวเตอร์",
+    "totalCredits": 1,
+    "creditsBreakdown": "1-0-2",
+    "semester": 6,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "อล004-4",
+    "courseName": "วิชาเอกเลือก",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-0",
+    "semester": 7,
+    "category": "major_elective",
+    "isPlaceholderSlot": true,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ลส001-1",
+    "courseName": "วิชาเลือกเสรี",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-0",
+    "semester": 7,
+    "category": "free_elective",
+    "isPlaceholderSlot": true,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ลส002-1",
+    "courseName": "วิชาเลือกเสรี",
+    "totalCredits": 3,
+    "creditsBreakdown": "3-0-0",
+    "semester": 7,
+    "category": "free_elective",
+    "isPlaceholderSlot": true,
+    "choiceGroupId": null,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "คพ492-2",
+    "courseName": "สัมมนาวิชาการทางวิทยาการคอมพิวเตอร์",
+    "totalCredits": 1,
+    "creditsBreakdown": "0-2-1",
+    "semester": 7,
+    "category": "major_required",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": null,
+    "prerequisites": [
+      "คพ347-1"
+    ]
+  },
+  {
+    "courseCode": "วท497-1",
+    "courseName": "สหกิจศึกษา",
+    "totalCredits": 9,
+    "creditsBreakdown": "0-270-0",
+    "semester": 8,
+    "category": "major_elective",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": "year4-term2-capstone",
+    "prerequisites": [
+      "คพ347-1"
+    ]
+  },
+  {
+    "courseCode": "วท498-1",
+    "courseName": "การเรียนรู้อิสระ",
+    "totalCredits": 9,
+    "creditsBreakdown": "0-270-0",
+    "semester": 8,
+    "category": "major_elective",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": "year4-term2-capstone",
+    "prerequisites": []
+  },
+  {
+    "courseCode": "วท499-1",
+    "courseName": "การศึกษา หรือการฝึกงาน หรือฝึกอบรมต่างประเทศ",
+    "totalCredits": 9,
+    "creditsBreakdown": "0-270-0",
+    "semester": 8,
+    "category": "major_elective",
+    "isPlaceholderSlot": false,
+    "choiceGroupId": "year4-term2-capstone",
+    "prerequisites": []
+  }
+]
