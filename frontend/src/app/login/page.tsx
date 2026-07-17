@@ -84,6 +84,9 @@ export default function LoginPage() {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
+              pattern="\d{10}"
+              maxLength={10}
+              title="รหัสนักศึกษาต้องเป็นตัวเลข 10 หลัก"
               style={{
                 width: '100%', padding: '0.875rem 1rem', border: '1.5px solid var(--gray-200)',
                 borderRadius: '10px', outline: 'none', transition: 'border-color 0.2s',
@@ -106,6 +109,8 @@ export default function LoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              minLength={6}
+              title="รหัสผ่านต้องมีความยาวอย่างน้อย 6 ตัวอักษร"
               style={{
                 width: '100%', padding: '0.875rem 1rem', border: '1.5px solid var(--gray-200)',
                 borderRadius: '10px', outline: 'none', transition: 'border-color 0.2s',

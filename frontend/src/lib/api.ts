@@ -28,16 +28,36 @@ export class ApiError extends Error {
 // Local mock data loaded from JSON
 const allCourses: Course[] = coursesData as unknown as Course[];
 
-export const login = async (username: string, password: string): Promise<{ access_token: string }> => {
+export const register = async (username: string, password: string): Promise<{ access_token: string }> => {
   if (typeof window !== 'undefined') {
+    const users = JSON.parse(localStorage.getItem('mockUsers') || '[]');
+    const exists = users.find((u: any) => u.username === username);
+    if (exists) {
+      throw new ApiError(400, 'รหัสนักศึกษานี้ถูกลงทะเบียนแล้ว');
+    }
+    users.push({ username, password });
+    localStorage.setItem('mockUsers', JSON.stringify(users));
+    
+    // Auto login
     localStorage.setItem('token', 'local-mock-token');
     localStorage.setItem('studentId', username);
   }
   return { access_token: 'local-mock-token' };
 };
 
-export const register = async (username: string, password: string): Promise<{ access_token: string }> => {
-  return login(username, password);
+export const login = async (username: string, password: string): Promise<{ access_token: string }> => {
+  if (typeof window !== 'undefined') {
+    const users = JSON.parse(localStorage.getItem('mockUsers') || '[]');
+    const user = users.find((u: any) => u.username === username && u.password === password);
+    
+    if (!user) {
+      throw new ApiError(401, 'ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง');
+    }
+    
+    localStorage.setItem('token', 'local-mock-token');
+    localStorage.setItem('studentId', username);
+  }
+  return { access_token: 'local-mock-token' };
 };
 
 export async function getCourses(): Promise<Course[]> {
