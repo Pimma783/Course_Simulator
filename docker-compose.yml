@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  database:
+    image: mysql:8.0
+    container_name: fskill-mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: cpas_db
+      MYSQL_USER: cpas_user
+      MYSQL_PASSWORD: cpas_password
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  backend:
+    build:
+      context: ./backend      # ชี้เข้าไปในโฟลเดอร์ backend
+      dockerfile: Dockerfile
+    container_name: fskill-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    depends_on:
+      - database
+    environment:
+      - MONGO_URI=mongodb://database:27017/fskill_db
+
+  frontend:
+    build:
+      context: ./frontend     # ชี้เข้าไปในโฟลเดอร์ frontend
+      dockerfile: Dockerfile
+    container_name: fskill-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    depends_on:
+      - backend
+    environment:
+      - PORT=3000
+      - HOST=0.0.0.0          # ช่วยให้ Next.js เชื่อมต่อออกเครื่องนอกได้ชัวร์
+
+volumes:
+  mysql-data:
