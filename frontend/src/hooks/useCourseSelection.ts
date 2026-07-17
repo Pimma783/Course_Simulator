@@ -1,9 +1,29 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Course, CourseStatus, SimulationInput } from '../lib/types';
 
 export function useCourseSelection() {
   const [status, setStatus] = useState<Record<string, CourseStatus>>({});
   const [currentSemester, setCurrentSemester] = useState<number>(1); // Default to semester 1
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    try {
+      const savedStatus = localStorage.getItem('courseStatus');
+      if (savedStatus) setStatus(JSON.parse(savedStatus));
+      const savedSem = localStorage.getItem('currentSemester');
+      if (savedSem) setCurrentSemester(parseInt(savedSem, 10));
+    } catch (e) {
+      console.error("Failed to parse localStorage data", e);
+    }
+    setIsLoaded(true);
+  }, []);
+
+  useEffect(() => {
+    if (isLoaded) {
+      localStorage.setItem('courseStatus', JSON.stringify(status));
+      localStorage.setItem('currentSemester', currentSemester.toString());
+    }
+  }, [status, currentSemester, isLoaded]);
 
   function cycleStatus(courseCode: string): void {
     setStatus((prev) => {

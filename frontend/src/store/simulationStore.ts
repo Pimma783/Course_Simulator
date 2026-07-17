@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
 import { SimulationInput } from '../lib/types';
 
 interface SimulationStore {
@@ -7,8 +8,15 @@ interface SimulationStore {
   clearInput: () => void;
 }
 
-export const useSimulationStore = create<SimulationStore>((set) => ({
-  input: null,
-  setInput: (input) => set({ input }),
-  clearInput: () => set({ input: null }),
-}));
+export const useSimulationStore = create<SimulationStore>()(
+  persist(
+    (set) => ({
+      input: null,
+      setInput: (input) => set({ input }),
+      clearInput: () => set({ input: null }),
+    }),
+    {
+      name: 'simulation-storage',
+    }
+  )
+);
