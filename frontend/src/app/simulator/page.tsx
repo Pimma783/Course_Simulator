@@ -80,9 +80,10 @@ export default function SimulatorPage() {
     );
   }
 
-  const semesters = [1, 2, 3, 4, 5, 6, 7, 8];
+  const allSemesters = [1, 2, 3, 4, 5, 6, 7, 8];
+  const displayedSemesters = allSemesters.slice(0, currentSemester);
   const coursesBySemester: Record<number, Course[]> = {};
-  semesters.forEach(s => coursesBySemester[s] = []);
+  displayedSemesters.forEach(s => coursesBySemester[s] = []);
   courses.forEach(c => { if (coursesBySemester[c.semester]) coursesBySemester[c.semester].push(c); });
 
   return (
@@ -92,7 +93,7 @@ export default function SimulatorPage() {
         <p>คลิกที่รายวิชาเพื่อเปลี่ยนสถานะ: ยังไม่ลง → ผ่านแล้ว → ติด F</p>
       </div>
       <div className="sim-grid">
-        {semesters.map(s => (
+        {displayedSemesters.map(s => (
           <SemesterColumn 
             key={s} 
             semester={s} 
