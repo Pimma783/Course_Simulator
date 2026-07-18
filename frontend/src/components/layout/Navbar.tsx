@@ -31,7 +31,7 @@ export function Navbar() {
             <circle cx="20" cy="20" r="3.2" fill="#E14F3D" />
             <path d="M6 17 L13 9 M13 9 L20 17" stroke="#DADCE8" strokeWidth="1.6" />
           </svg>
-          CourseGraph
+          Course Simulator
         </Link>
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
           {mounted && (
