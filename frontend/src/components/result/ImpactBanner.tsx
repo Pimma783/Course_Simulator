@@ -55,14 +55,7 @@ export function ImpactBanner({ delaySemesters, affectedCourses, retakePlans, exp
         </div>
       )}
 
-      {/* Affected Pills */}
-      {affectedCourses.length > 0 && (
-        <div className="affected-list">
-          {affectedCourses.map(c => (
-            <span key={c.courseCode} className="affected-pill">{c.courseCode}</span>
-          ))}
-        </div>
-      )}
+
 
       {/* Detailed Chains & Retake Plans (Old UI preserved below the banner) */}
       {affectedCourses.length > 0 && (
