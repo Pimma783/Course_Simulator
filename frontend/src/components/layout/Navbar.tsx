@@ -24,8 +24,14 @@ export function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-inner">
-        <Link href="/" className="navbar-brand">
-          <span>CS</span> Course Simulator
+        <Link href="/" className="navbar-brand" style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '18px', fontWeight: 700, color: 'var(--blue-900)' }}>
+          <svg viewBox="0 0 26 26" fill="none" style={{ width: '26px', height: '26px' }}>
+            <circle cx="6" cy="20" r="3.2" fill="#1F9D66" />
+            <circle cx="13" cy="6" r="3.2" fill="#6C5CE7" />
+            <circle cx="20" cy="20" r="3.2" fill="#E14F3D" />
+            <path d="M6 17 L13 9 M13 9 L20 17" stroke="#DADCE8" strokeWidth="1.6" />
+          </svg>
+          CourseGraph
         </Link>
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
           {mounted && (

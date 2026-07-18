@@ -2,28 +2,30 @@
 
 import { Hero } from '../components/landing/Hero';
 import { FeatureCard } from '../components/landing/FeatureCard';
-import { BookOpen, AlertTriangle, Zap, LogIn } from 'lucide-react';
-import Link from 'next/link';
+import { Layers, AlertTriangle, FileText } from 'lucide-react';
 
 export default function LandingPage() {
   return (
-    <div className="container" style={{ paddingTop: '2rem' }}>
+    <div className="container" style={{ paddingTop: '2rem', paddingBottom: '4rem' }}>
       <Hero />
-      <section className="feature-grid">
+      <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', padding: '60px 0' }}>
         <FeatureCard
-          title="ตรวจสอบเงื่อนไข"
-          description="เช็คว่าคุณสามารถลงทะเบียนเรียนวิชาใดได้บ้างในเทอมถัดไป ตามวิชาที่คุณสอบผ่านแล้ว"
-          icon={<BookOpen size={22} />}
+          title="ตรวจสอบสิทธิ์อัตโนมัติ"
+          description="ระบบจะคำนวณวิชาบังคับก่อนให้ทันที แจ้งเตือนวิชาที่ลงไม่ได้พร้อมเหตุผล"
+          icon={<Layers size={24} />}
+          theme="blue"
         />
         <FeatureCard
-          title="จำลองผลกระทบโดมิโน"
-          description="ดูว่าถ้าหากสอบตกวิชาสำคัญ จะส่งผลกระทบต่อเนื่องทำให้แผนการเรียนล่าช้าไปกี่เทอม"
-          icon={<AlertTriangle size={22} />}
+          title="ผลกระทบโดมิโน"
+          description="ประเมินความเสี่ยงล่วงหน้า หากสอบตกวิชาแกน จะกระทบการเรียนกี่เทอม"
+          icon={<AlertTriangle size={24} />}
+          theme="red"
         />
         <FeatureCard
-          title="วางแผนรวดเร็ว"
-          description="ใช้งานง่ายเพียงแค่คลิกเลือกสถานะรายวิชา ไม่ต้องรอให้ถึงวันลงทะเบียนจริง"
-          icon={<Zap size={22} />}
+          title="ส่งออกเป็นรายงาน"
+          description="ดาวน์โหลดผลการจำลองเป็น PDF หรือ CSV เพื่อปรึกษาอาจารย์ที่ปรึกษา"
+          icon={<FileText size={24} />}
+          theme="green"
         />
       </section>
     </div>
