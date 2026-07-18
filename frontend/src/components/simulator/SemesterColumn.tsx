@@ -7,10 +7,11 @@ interface SemesterColumnProps {
   semester: number;
   courses: Course[];
   statusMap: Record<string, CourseStatus>;
+  lockedCourses: Set<string>;
   onCourseClick: (courseCode: string) => void;
 }
 
-export function SemesterColumn({ semester, courses, statusMap, onCourseClick }: SemesterColumnProps) {
+export function SemesterColumn({ semester, courses, statusMap, lockedCourses, onCourseClick }: SemesterColumnProps) {
   return (
     <div className="semester-col">
       <div className="semester-label">ภาคเรียนที่ {semester}</div>
@@ -20,6 +21,7 @@ export function SemesterColumn({ semester, courses, statusMap, onCourseClick }: 
             key={course.courseCode}
             course={course}
             status={statusMap[course.courseCode]}
+            isLocked={lockedCourses.has(course.courseCode)}
             onClick={() => onCourseClick(course.courseCode)}
           />
         ))}

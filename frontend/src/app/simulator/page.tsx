@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { Course } from '../../lib/types';
 import { getCourses } from '../../lib/api';
@@ -40,10 +40,32 @@ export default function SimulatorPage() {
   }, [isAuthenticated, router]);
 
   const handleProcess = () => {
+    // Before passing to simulation input, we should probably strip out statuses of locked courses
+    // But the backend simulation logic also enforces prerequisites, so it's safe either way.
     const input = toSimulationInput();
     setStoreInput(input);
     router.push('/result');
   };
+
+  const lockedCourses = useMemo(() => {
+    const locked = new Set<string>();
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (const course of courses) {
+        if (!locked.has(course.courseCode)) {
+          const hasFailedPrereq = course.prerequisites.some(pre => 
+            status[pre] === 'failed' || locked.has(pre)
+          );
+          if (hasFailedPrereq) {
+            locked.add(course.courseCode);
+            changed = true;
+          }
+        }
+      }
+    }
+    return locked;
+  }, [courses, status]);
 
   if (loading) {
     return <div className="page-center"><div className="loading-text">กำลังโหลดรายวิชา...</div></div>;
@@ -71,7 +93,14 @@ export default function SimulatorPage() {
       </div>
       <div className="sim-grid">
         {semesters.map(s => (
-          <SemesterColumn key={s} semester={s} courses={coursesBySemester[s]} statusMap={status} onCourseClick={cycleStatus} />
+          <SemesterColumn 
+            key={s} 
+            semester={s} 
+            courses={coursesBySemester[s]} 
+            statusMap={status} 
+            lockedCourses={lockedCourses}
+            onCourseClick={cycleStatus} 
+          />
         ))}
       </div>
       <StickySummaryBar
