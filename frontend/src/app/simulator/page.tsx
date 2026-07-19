@@ -54,10 +54,11 @@ export default function SimulatorPage() {
       changed = false;
       for (const course of courses) {
         if (!locked.has(course.courseCode)) {
-          const hasFailedPrereq = course.prerequisites.some(pre => 
-            status[pre] === 'failed' || locked.has(pre)
+          // Lock if any prerequisite is NOT passed (meaning it is 'failed' or 'none'/unselected)
+          const isLocked = course.prerequisites.some(pre => 
+            status[pre] !== 'passed' || locked.has(pre)
           );
-          if (hasFailedPrereq) {
+          if (isLocked) {
             locked.add(course.courseCode);
             changed = true;
           }
