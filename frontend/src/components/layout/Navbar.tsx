@@ -2,24 +2,33 @@
 
 import Link from 'next/link';
 import { useAuthStore } from '../../store/authStore';
-import { useRouter } from 'next/navigation';
-import { LogOut, User } from 'lucide-react';
+import { useRouter, usePathname } from 'next/navigation';
+import { LogOut, User, Menu, X } from 'lucide-react';
 
 import { useEffect, useState } from 'react';
 
 export function Navbar() {
   const { isAuthenticated, username, logout } = useAuthStore();
   const router = useRouter();
+  const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [pathname]);
+
   const handleLogout = () => {
     logout();
     router.push('/');
   };
+
+  const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
     <nav className="navbar">
@@ -33,25 +42,32 @@ export function Navbar() {
           </svg>
           Course Simulator
         </Link>
-        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+        
+        {/* Hamburger Icon for Mobile */}
+        <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
+        {/* Desktop Menu & Mobile Slide-down */}
+        <div className={`navbar-menu ${isMobileMenuOpen ? 'open' : ''}`}>
           {mounted && (
             isAuthenticated ? (
               <>
                 <Link href="/dashboard" className="navbar-link">Dashboard</Link>
                 <Link href="/simulator" className="navbar-link">เริ่มจำลอง</Link>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginLeft: '1rem', borderLeft: '1px solid var(--gray-200)', paddingLeft: '1rem' }}>
-                  <span style={{ fontSize: '0.875rem', color: 'var(--gray-600)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div className="navbar-user-section">
+                  <span className="navbar-username">
                     <User size={16} /> {username}
                   </span>
-                  <button onClick={handleLogout} className="btn btn-outline" style={{ padding: '6px 12px', fontSize: '0.8125rem' }}>
+                  <button onClick={handleLogout} className="btn btn-outline logout-btn">
                     <LogOut size={14} /> ออกจากระบบ
                   </button>
                 </div>
               </>
             ) : (
               <>
-                <Link href="/login" className="navbar-link" style={{ color: 'var(--blue-600)', fontWeight: 600 }}>เข้าสู่ระบบ</Link>
-                <Link href="/register" className="btn btn-primary" style={{ padding: '6px 16px', fontSize: '0.875rem' }}>สมัครสมาชิก</Link>
+                <Link href="/login" className="navbar-link login-link">เข้าสู่ระบบ</Link>
+                <Link href="/register" className="btn btn-primary register-btn">สมัครสมาชิก</Link>
               </>
             )
           )}

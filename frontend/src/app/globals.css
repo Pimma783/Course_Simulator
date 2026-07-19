@@ -122,6 +122,100 @@ a { color: inherit; text-decoration: none; }
   color: var(--blue-600);
 }
 
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--gray-600);
+  cursor: pointer;
+  padding: 4px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar-user-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+  border-left: 1px solid var(--gray-200);
+  padding-left: 1rem;
+}
+
+.navbar-username {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logout-btn {
+  padding: 6px 12px;
+  font-size: 0.8125rem;
+}
+
+.login-link {
+  color: var(--blue-600);
+  font-weight: 600;
+}
+
+.register-btn {
+  padding: 6px 16px;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    flex-direction: column;
+    padding: 16px 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  
+  .navbar-menu.open {
+    display: flex;
+  }
+  
+  .navbar-user-section {
+    margin-left: 0;
+    border-left: none;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 8px;
+    padding-top: 16px;
+    border-top: 1px solid var(--gray-200);
+  }
+  
+  .navbar-link, .login-link {
+    width: 100%;
+    padding: 8px 0;
+  }
+  
+  .register-btn, .logout-btn {
+    width: 100%;
+    margin-top: 8px;
+    justify-content: center;
+  }
+}
+
 /* ─── Hero ─── */
 .hero {
   padding: 80px 24px 64px;
